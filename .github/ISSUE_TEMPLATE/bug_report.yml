@@ -42,7 +42,7 @@ body:
       description: Приложите дополнительные материалы
     validations:
       required: true
-  - type: text
+  - type: textarea
     id: environmentId
     attributes:
       label: Среда выполнения
