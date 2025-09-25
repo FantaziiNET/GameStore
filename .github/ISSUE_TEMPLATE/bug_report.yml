@@ -12,7 +12,7 @@ body:
     validations:
       required: true
   - type: markdown
-    id: stepsToReproduceId
+    id: markdownId
     attributes:
       label: Шаги воспроизведения
       description: Опишите шаги, которые необходимо выполнить для воспроизведения ошибки
