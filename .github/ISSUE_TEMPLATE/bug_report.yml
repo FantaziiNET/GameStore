@@ -1,0 +1,35 @@
+name: NameShablon
+description: DiscriptionShablon
+title: "[Ошибка]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: textareaId
+    attributes:
+      label: Описание ошибки
+      description: описание
+      placeholder: подсказка
+    validations:
+      required: true #поле обязательно для заполнения
+  - type: dropdown
+    id: dropdownId
+    attributes:
+      label: Список опций
+      description: описание
+      options:
+       - список
+       - опций
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        Отобразить текст с разметкой markdown
+  - type: checkboxes
+    id: checkboxesId
+    attributes:
+      label: подпись
+      description: описание
+      options:
+      - label: флажок 1
+        required: true #флажок обязателен или нет
