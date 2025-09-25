@@ -11,8 +11,8 @@ body:
       placeholder: Опишите проблему подробно
     validations:
       required: true
-  - type: markdown
-    id: markdownId
+  - type: textarea
+    id: stepsToReproduceId
     attributes:
       label: Шаги воспроизведения
       description: Опишите шаги, которые необходимо выполнить для воспроизведения ошибки
