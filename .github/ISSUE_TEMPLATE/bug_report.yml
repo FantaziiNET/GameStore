@@ -53,14 +53,23 @@ body:
   - type: dropdown
     id: severityId
     attributes:
-      label: Приоритет
+      label: Серьёзность
       description: "Выберите уровень серьезности дефекта."
       options:
-        - label: "Критический"
-          required: false
-        - label: "Высокий"
-          required: false
-        - label: "Средний"
-          required: false
-        - label: "Низкий"
-          required: false
+        - Критический
+        - Высокий
+        - Средний
+        - Низкий
+    validations:
+      required: true        
+  - type: dropdown
+    id: severityId2
+    attributes:
+      label: Приоритет
+      description: "Выберите уровень приоритета дефекта."
+      options:
+        - Высокий
+        - Средний
+        - Низкий  
+    validations:
+      required: true        
