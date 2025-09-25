@@ -11,3 +11,11 @@ body:
       placeholder: Опишите проблему подробно
     validations:
       required: true
+  - type: markdown
+    id: stepsToReproduceId
+    attributes:
+      label: Шаги воспроизведения
+      description: "Опишите шаги, которые необходимо выполнить для воспроизведения ошибки."
+      placeholder: "Шаги для воспроизведения проблемы"
+    validations:
+      required: true
