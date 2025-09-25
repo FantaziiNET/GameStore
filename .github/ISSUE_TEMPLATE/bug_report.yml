@@ -41,7 +41,7 @@ body:
       label: Дополнительная информация
       description: Приложите дополнительные материалы
     validations:
-      required: true
+      required: false
   - type: textarea
     id: environmentId
     attributes:
