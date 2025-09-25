@@ -19,3 +19,48 @@ body:
       placeholder: Шаги для воспроизведения проблемы
     validations:
       required: true
+  - type: textarea
+    id: expectedResultId
+    attributes:
+      label: Ожидаемый результат
+      description: "Опишите, что должно произойти при выполнении шагов."
+      placeholder: "Ожидаемый результат"
+    validations:
+      required: true
+  - type: textarea
+    id: actualResultId
+    attributes:
+      label: Фактический результат
+      description: "Опишите, что произошло на самом деле."
+      placeholder: "Фактический результат"
+    validations:
+      required: true
+  - type: textarea
+    id: additionalInfoId
+    attributes:
+      label: Дополнительная информация
+      description: Приложите дополнительные материалы
+    validations:
+      required: true
+  - type: textarea
+    id: environmentId
+    attributes:
+      label: Среда выполнения
+      description: "Укажите среду, в которой возникла ошибка (например, ОС, браузер)."
+      placeholder: "Windows 10, Chrome 95"
+    validations:
+      required: true
+  - type: checkboxes
+    id: severityId
+    attributes:
+      label: Серьезность
+      description: "Выберите уровень серьезности дефекта."
+      options:
+        - label: "Критический"
+          required: false
+        - label: "Высокий"
+          required: false
+        - label: "Средний"
+          required: false
+        - label: "Низкий"
+          required: false
