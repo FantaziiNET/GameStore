@@ -4,7 +4,7 @@ title: "[Ошибка]: Название ошибки"
 labels: ["bug"]
 body:
   - type: textarea
-    id: textareaId
+    id: descriptionId
     attributes:
       label: Описание ошибки
       description: Подробное описание дефекта
@@ -12,12 +12,11 @@ body:
     validations:
       required: true
   - type: markdown
+    id: stepsToReproduceId
     attributes:
-    value: |
-      **Шаги воспроизведения:**
-      1. Шаг 1.
-      2. Шаг 2.
-      3. Шаг 3.
+      label: Шаги воспроизведения
+      description: "Опишите шаги, которые необходимо выполнить для воспроизведения ошибки."
+      placeholder: "Шаги для воспроизведения проблемы"
     validations:
       required: true
   - type: textarea
@@ -37,7 +36,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: textareaId
+    id: additionalInfoId
     attributes:
       label: Дополнительная информация
       description: Приложите дополнительные материалы
