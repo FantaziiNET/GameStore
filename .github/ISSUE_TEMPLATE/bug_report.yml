@@ -1,35 +1,67 @@
-name: NameShablon
-description: DiscriptionShablon
-title: "[Ошибка]: "
+name: Название дефекта
+description: Краткое описание дефекта
+title: "[Ошибка]: Название ошибки"
 labels: ["bug"]
 body:
   - type: textarea
     id: textareaId
     attributes:
       label: Описание ошибки
-      description: описание
-      placeholder: подсказка
-    validations:
-      required: true #поле обязательно для заполнения
-  - type: dropdown
-    id: dropdownId
-    attributes:
-      label: Список опций
-      description: описание
-      options:
-       - список
-       - опций
+      description: Подробное описание дефекта
+      placeholder: Опишите проблему подробно
     validations:
       required: true
   - type: markdown
     attributes:
-      value: |
-        Отобразить текст с разметкой markdown
-  - type: checkboxes
-    id: checkboxesId
+    value: |
+      **Шаги воспроизведения:**
+      1. Шаг 1.
+      2. Шаг 2.
+      3. Шаг 3.
+    validations:
+      required: true
+  - type: textarea
+    id: expectedResultId
     attributes:
-      label: подпись
-      description: описание
+      label: Ожидаемый результат
+      description: "Опишите, что должно произойти при выполнении шагов."
+      placeholder: "Ожидаемый результат"
+    validations:
+      required: true
+  - type: textarea
+    id: actualResultId
+    attributes:
+      label: Фактический результат
+      description: "Опишите, что произошло на самом деле."
+      placeholder: "Фактический результат"
+    validations:
+      required: true
+  - type: textarea
+    id: textareaId
+    attributes:
+      label: Дополнительная информация
+      description: Приложите дополнительные материалы
+    validations:
+      required: true
+  - type: text
+    id: environmentId
+    attributes:
+      label: Среда выполнения
+      description: "Укажите среду, в которой возникла ошибка (например, ОС, браузер)."
+      placeholder: "Windows 10, Chrome 95"
+    validations:
+      required: true
+  - type: checkboxes
+    id: severityId
+    attributes:
+      label: Серьезность
+      description: "Выберите уровень серьезности дефекта."
       options:
-      - label: флажок 1
-        required: true #флажок обязателен или нет
+        - label: "Критический"
+          required: false
+        - label: "Высокий"
+          required: false
+        - label: "Средний"
+          required: false
+        - label: "Низкий"
+          required: false
