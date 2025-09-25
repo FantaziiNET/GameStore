@@ -50,7 +50,7 @@ body:
       placeholder: "Windows 10, Chrome 95"
     validations:
       required: true
-  - type: radiobutton
+  - type: dropdown
     id: severityId
     attributes:
       label: Приоритет
